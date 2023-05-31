@@ -1,0 +1,98 @@
+.bta-animated {
+    animation-duration : var(--bta-animate-time, 1s);
+    animation-fill-mode: both;
+
+}
+
+.bta-animate-hide {
+    visibility: hidden;
+}
+
+.bna-animate-show {
+    visibility: visible
+}
+
+
+.bta-animate__fadein-down {
+    @keyframes fadeInDown {
+        0% {
+            opacity  : 0;
+            transform: translateY(var(--bta-animate-f-range, -15%));
+        }
+
+        100% {
+            opacity  : 1;
+            transform: translateY(0);
+        }
+    }
+
+    animation-name: fadeInDown;
+}
+
+
+
+.bta-animate__fadein-left {
+    @keyframes fadeInLeft {
+        0% {
+            opacity  : 0;
+            transform: translate3d(var(--bta-animate-f-range, -15%), 0, 0)
+        }
+
+        to {
+            opacity  : 1;
+            transform: none
+        }
+    }
+
+    animation-name: fadeInLeft;
+}
+
+
+
+.bta-animate__fadein-right {
+    @keyframes fadeInRight {
+        0% {
+            opacity  : 0;
+            transform: translate3d(var(--bta-animate-z-range, 15%), 0, 0)
+        }
+
+        to {
+            opacity  : 1;
+            transform: none
+        }
+    }
+
+    animation-name: fadeInRight;
+}
+
+
+
+.bta-animate__fadein-up {
+    @keyframes fadeInUp {
+        0% {
+            opacity  : 0;
+            transform: translateY(var(--bta-animate-z-range, 15%));
+        }
+
+        100% {
+            opacity  : 1;
+            transform: translateY(0);
+        }
+    }
+
+    animation-name: fadeInUp;
+}
+
+.bta-animate__fadein-height {
+    @keyframes animteHeight {
+        0% {
+            height: 0
+        }
+
+        100% {
+            height: 100%
+        }
+    }
+
+    animation-name: animteHeight;
+}
