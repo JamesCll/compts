@@ -1,0 +1,22 @@
+.watermark {
+    top           : 0;
+    bottom        : 0;
+    left          : 0;
+    right         : 0;
+    pointer-events: none;
+    overflow      : hidden;
+    z-index       : 99;
+
+    &__row {
+        position        : relative;
+        white-space     : nowrap;
+        transform       : rotate(-30deg);
+        transform-origin: center;
+    }
+
+    &__text {
+        color      : #000000;
+        font-size  : 24px;
+        font-weight: 500;
+    }
+}
